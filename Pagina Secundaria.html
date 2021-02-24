@@ -1,0 +1,126 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8"> 
+		<title> Página de Compras</title>
+        <link rel="stylesheet" href="pagsecundaria.css">
+        <script source:></script>
+    </head>
+    
+
+	<body>
+        <nav>
+
+         <label class="logo">Comprar e Vender</label>
+
+            <ul>
+                <li><a href="index.html">Informações</a></li>
+                <li><a href="#">Comprar</a></li>
+                <li><a href="Pagina 3.html">Formulário</a></li>
+            </ul>
+            
+        </nav>
+
+        <table border: 3px solid royalblue>
+            <tr>
+                <td>
+                    <img src="fotos/comprar.jpg">
+                </td>
+                <td>
+                    <img src="fotos/comprar.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td id="botao">
+                    <input type="number" name="n1" id="n1" placeholder="Quantidade">
+                </td>
+                <td id="botao">
+                    <input type="number" name="n2" id="n2" placeholder="Quantidade">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="fotos/comprar.jpg">
+                </td>
+                <td>
+                    <img src="fotos/comprar.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td id="botao">
+                    <input type="number" name="n3" id="n3" placeholder="Quantidade">
+                </td>
+                <td id="botao">
+                    <input type="number" name="n4" id="n4" placeholder="Quantidade">
+                </td>
+            </tr>
+        </table>
+        <div id="ad">
+            <input type="button" name="somar" id="somar" value="Adicionar ao Carrinho" onclick="add()" onclick="add2()" >
+        </div>
+
+        <div id="quant"> Quantidade:</div>
+        <div id="pagamento">Total a pagar:</div>
+
+        
+
+
+        <center>
+            <table id="ciccopn">
+                <th> <img src="fotos/CICCOPN.jpg"> </th>
+                <td>
+                    <audio controls>
+                        <source src="blablabla.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+                <th id="gmail">
+                    <img src="fotos/gmail.png">
+                </th>
+            </table>
+        </center>
+
+
+        <script>
+            function add(){
+
+                var num1 = Number(window.document.getElementById('n1').value)
+                var num2 = Number(window.document.getElementById('n2').value)
+                var num3 = Number(window.document.getElementById('n3').value)
+                var num4 = Number(window.document.getElementById('n4').value)
+
+                var s = window.document.getElementById('quant')
+
+                var quant = num1 + num2 + num3 + num4
+                s.innerText = `Quantidade: ${quant}`
+
+                var x = window.document.getElementById('pagamento')
+
+                var pagamento = quant * 20
+                x.innerText = `Total a pagar: ${pagamento} €`
+            }
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

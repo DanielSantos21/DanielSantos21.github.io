@@ -1,0 +1,94 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8"> 
+		<title> Página de Vendas</title>
+        <link rel="stylesheet" href="pagina3.css">
+    </head>
+    
+    <body>
+
+        <nav>
+            <label class="logo">Comprar e Vender</label>
+            <ul>
+                <li><a href="index.html">Informações</a></li>
+                <li><a href="Pagina Secundaria.html">Comprar</a></li>
+                <li><a href="#">Formulário</a></li>
+        
+            </ul>
+        </nav>
+
+        <h1 id="titlo">Formulário-Promoções</h1>
+        <fieldset id="quadro">
+
+            <fieldset><legend>Indentificação do utilizador</legend>
+               <p> Nome: <input type="text" name="nome"  id="nome" size="50" placeholder="Nome Completo"></p>
+               <p> Email: <input type="email" name="email" size="50" placeholder="Email"></p>
+               <p> Password: <input type="password" name="Password" placeholder="Password"></p>
+                </form>
+            </fieldset>  
+        
+            <fieldset><legend>Género</legend>
+               <input type="radio" name="Género" id="genero" value="masculino"> Masculino
+               <input type="radio" name="Género" id="genero" value="feminino"> Feminino
+            </fieldset>
+        
+            <fieldset><legend> Data de Nascimento</legend>
+                <input type="date" name="data-nascimento">
+            </fieldset>
+        
+            <fieldset><legend>Morada do utilizador</legend>
+                <p> Rua: <input type="text" name="rua" size="50" placeholder="Nome da Rua"></p>
+                <p> Número: <input type="number" name="numero" placeholder="Número"></p>
+                <p> Código Postal: <input type="number" name="cogpst" placeholder="Código Postal"></p>
+                <p> Localidade: <input type="text" name="Localidade" size="30" placeholder="Localidade" list="Localidade"></p>
+                <datalist id="Localidade">
+                    <option value="Matosinhos"></option>
+                    <option value="Maia"></option>
+                    <option value="Trofa"></option>
+                    <option value="Santo Tirso"></option>      
+                </datalist>
+            </fieldset>
+        
+            <fieldset><legend>Observações</legend>
+                <p>Mensagem: </p><textarea input type="text" name="Mensagem" placeholder="Escreva uma Mensagem" list="Mensagem" rows="10" cols="90" ></textarea>
+            </fieldset>
+            <input type="button" id="enviar" value="Enviar" onclick="envio()">
+            <div id="texto1"></div>     
+
+        </fieldset>
+
+        <button id="botão"><a href="index.html">Voltar</button></a>
+
+        <script>
+            function envio(){
+                var nome = window.document.getElementById('nome').value
+                var n = window.document.getElementById('texto1')
+
+
+                n.innerText = `Obrigado ${nome} pelo seu formulário.`
+            }
+        </script>
+
+        <center>
+            <table id="ciccopn">
+                <th> <img src="fotos/CICCOPN.jpg"> </th>
+                <td>
+                    <audio controls>
+                        <source src="fotos/blablabla.mp3" type="audio/mp3">
+                    </audio>
+                </td>
+                <th id="gmail">
+                    <img src="fotos/gmail.png">
+                </th>
+            </table>
+        </center>
+
+
+
+
+
+
+    </body>
+
+</html>

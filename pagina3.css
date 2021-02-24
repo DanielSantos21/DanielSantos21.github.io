@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background-image:url(fotos/fundo.png);
+    background-attachment:fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#titlo{
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+#ciccopn{
+  margin-top: 950px;
+}
+
+#vendas{
+  margin-top: 80px;
+  border: 5px solid royalblue;
+}
+
+
+#texto1{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 30px;
+}
+
+
+
+td{
+  font-size: 10px;
+  text-align: center;
+
+}
+
+fieldset{
+  padding: 10px;
+  border: 2px solid black;
+  margin-left: 5px;
+}
+
+#quadro{
+  margin: 50px;
+}
+
+#botão{
+  margin: 5px;
+  font-size: 30px;
+  margin-left: 925px;
+}
+
+#botao a{
+  text-decoration: none;
+  color: black;
+}
+
+#enviar{
+  margin: 5px;
+  margin-left: 860px;
+  font-size: 30px;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav{
+    background: royalblue;
+    height: 80px;
+    width: 100%;
+    border: 1px solid white;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;         <!fundo azul claro atras das categorias>
+    transition: .5s;
+  }
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+  }
+}
